@@ -1,0 +1,46 @@
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+    li{
+        padding: 10px 20px;
+        a{
+            color: #14213d;
+            font-size: 1.5em;
+            padding: 0 10px;
+            position: relative; 
+            transition: transform 0.2s ease;
+
+            svg{
+                position: relative;
+                top: 4px;
+                margin-right: 5px;
+            }
+        }
+
+    }
+}
+
+.nav-bar a:hover {
+    color: snow;
+    transform: scale(1.05);
+}
+
+.nav-bar a.active {
+    opacity: 0.4;
+}
+
+.nav-bar a::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+}
+
+.nav-bar a:hover::after {
+    transform: scaleX(1);
+}
