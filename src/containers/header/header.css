@@ -1,9 +1,22 @@
-.header{
+.header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: #8697c4;
-    img{
-        height: 50px;
+    background-color: var(--main-color);
+
+    .logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img {
+            height: 50px;
+        }
+        p{
+            position: relative;
+            bottom: 5px;
+            font-size: 0.8em;
+            color: snow;
+        }
     }
 }

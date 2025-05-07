@@ -4,8 +4,15 @@
   box-sizing: border-box;
 }
 
-:root{
-  background-color: #ede8f5;
+:root {
+  --main-bg-color: #ede8f5;
+  --main-color: #8697c4;
+  --second-color: #3D52A0;
+  --third-color: #7091E6;
+}
+
+body {
+  background-color: var(--main-bg-color);
 }
 
 ul>li {

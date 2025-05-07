@@ -5,6 +5,16 @@ const courseService = axios.create({
 });
 
 export async function getCourses() {
-    const response = await courseService.get("/");
+    const response = await courseService.get("");
+    return response.data;
+}
+
+export async function addCourse(code, title, etc) {
+    const response = await courseService.post("/create", {
+        code,
+        title,
+        etc
+    })
+    console.log(response.data)
     return response.data;
 }
