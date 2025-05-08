@@ -1,3 +1,5 @@
+import DisplayStudents from "../../containers/display-students/display-students.jsx";
+
 export default function StudentPage() {
-    return <div>Student page</div>
+    return <div><DisplayStudents></DisplayStudents></div>
 }
