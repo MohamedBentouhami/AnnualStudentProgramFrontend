@@ -15,6 +15,5 @@ export async function addCourse(code, title, etc) {
         title,
         etc
     })
-    console.log(response.data)
     return response.data;
 }

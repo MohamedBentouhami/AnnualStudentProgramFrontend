@@ -1,9 +1,13 @@
 import { addCourse } from '../../services/course.service.js';
-import './modal-course-form.css'
 import { XCircle } from "@phosphor-icons/react";
+import './modal-course-form.css'
+import { useDispatch } from 'react-redux';
+import { createCourse } from '../../store/courses/course.action.js';
 
 
 export default function ModalCourseForm({ onClose }) {
+    const dispatch = useDispatch();
+
     const handleModalClick = (e) => {
         e.stopPropagation();
     }
@@ -11,8 +15,8 @@ export default function ModalCourseForm({ onClose }) {
         const code = formData.get("course-code");
         const title = formData.get("course-title");
         const etc = formData.get("course-etc");
-        await addCourse(code, title, etc);
-        //TODO handle error
+        const newCourse = await addCourse(code, title, etc);
+        dispatch(createCourse(newCourse));
         onClose();
     }
 
