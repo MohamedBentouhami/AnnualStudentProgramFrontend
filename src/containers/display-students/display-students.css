@@ -3,12 +3,13 @@
     padding: 0 1rem;
     gap: 2em;
     width: 50%;
+    display: flex;
+    flex-direction: column;
 }
 
 .student-title {
     color: var(--second-color);
     text-align: center;
-    margin-bottom: 2rem;
     font-size: 2.2rem;
 }
 
@@ -59,3 +60,4 @@
         padding: 0.75rem;
     }
 }
+

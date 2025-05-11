@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux"
 import { studentsFetch } from "../../store/students/student.action.js";
 import Loader from "../../components/loader/loader.jsx";
 import "./display-students.css"
+import ModalStudentForm from "../../components/modal-student-form/modal-student-form.jsx";
 
 export default function DisplayStudents() {
     const dispatch = useDispatch();
