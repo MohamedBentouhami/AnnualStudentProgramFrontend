@@ -1,12 +1,37 @@
-# React + Vite
+# 🎓 Annual Student Program (Frontend)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the **frontend application** for the *Annual Student Program*, built with React and Redux. It connects to a Spring Boot backend via RESTful APIs to manage students and their course enrollments.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Overview
 
-## Expanding the ESLint configuration
+This application provides a clean and intuitive interface for managing:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🧑‍🎓 **Students**  
+- 📚 **Courses**  
+- 📝 **Course Enrollments**  
+
+Designed for administrators or instructors, it serves as the frontend for a complete educational management platform.
+
+---
+
+## 🏗️ Tech Stack
+
+- ⚛️ **React** – UI component library  
+- 🛠️ **Redux Toolkit** – Predictable and efficient state management  
+- 🧭 **React Router** – Declarative routing for SPA navigation  
+- 🌐 **Axios** – Promise-based HTTP client for API communication  
+- 🎨 **CSS** – Styling and layout  
+- 💡 **JavaScript (ES6+)** – Core programming logic  
+
+---
+
+## 🚀 Features
+
+- 📋 Display dynamic lists of all students and courses  
+- 🔄 View student enrollments per course and vice versa  
+- 💾 State management powered by Redux for consistency  
+- ⚡ Optimized for speed and responsive user experience  
+- 🔗 Seamless communication with backend APIs  
+- 🧩 Modular code architecture for easy maintenance and scalability  
