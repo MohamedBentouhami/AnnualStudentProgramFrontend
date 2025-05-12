@@ -1,5 +1,5 @@
 import { createReducer } from "@reduxjs/toolkit"
-import { studentsFetch } from "./student.action.js";
+import { addNewStudent, studentsFetch } from "./student.action.js";
 
 const initialState = {
     isLoading: false,
@@ -22,6 +22,9 @@ const StudentReducer = createReducer(initialState, (builder) => {
         .addCase(studentsFetch.rejected, (state, action) => {
             state.isLoading = false;
             state.error = action.error.message ?? "Failed to fetch students"
+        })
+        .addCase(addNewStudent, (state, action) => {
+            state.students.push(action.payload)
         })
 })
 

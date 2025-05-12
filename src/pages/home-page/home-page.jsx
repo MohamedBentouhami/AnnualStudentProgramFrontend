@@ -1,11 +1,15 @@
-import { NavLink } from "react-router-dom"
+import { NavLink, useNavigate } from "react-router-dom"
 import "./home-page.css"
 
 export default function HomePage() {
-
+    let navigate = useNavigate();
     const navToCoursesList = () => {
-
+        navigate("/courses")
     }
+    const navToStudentsList = () => {
+        navigate("/students")
+    }
+
 
     return <div className="welcome-container">
 
@@ -16,13 +20,12 @@ export default function HomePage() {
             designed
             to equip you with the skills, knowledge, and experiences needed to shape your future. 🚀</p>
         <div>
-            <NavLink to="/courses">
-                <button className="btn">Courses List
-                </button>
-            </NavLink>
-            <NavLink to="/students">
-                <button className="btn"><NavLink> </NavLink>Students List</button>
-            </NavLink>
+            <button className="btn" onClick={navToStudentsList}>
+                Courses List
+            </button>
+            <button className="btn" onClick={navToCoursesList}>
+                Students List
+            </button>
         </div>
     </div>
 }

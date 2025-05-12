@@ -1,0 +1,15 @@
+.form-group {
+    div {
+        input[type="radio"] {
+            margin-left: 0.5rem;
+            margin-right: 0.2rem;
+            margin-top: 0.5rem;
+        }
+    }
+}
+
+.student-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
