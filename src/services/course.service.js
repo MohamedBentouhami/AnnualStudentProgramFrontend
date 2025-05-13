@@ -17,3 +17,8 @@ export async function addCourse(code, title, etc) {
     })
     return response.data;
 }
+
+export async function getStudentsByCourse(courseId) {
+    const response = await courseService.get(`/${courseId}/students`);
+    return response.data;
+}

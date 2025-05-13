@@ -5,6 +5,7 @@ import CoursePage from "./pages/course-page/course-page.jsx"
 import StudentPage from "./pages/student-page/student-page.jsx"
 import Header from "./containers/header/header.jsx"
 import store from "./store/store.js"
+import CourseDetailPage from "./pages/course-detail-page/course-detail-page.jsx"
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/courses" element={<CoursePage />} />
             <Route path="/students" element={<StudentPage />} />
+            <Route path="/courses/:id" element={<CourseDetailPage />}></Route>
           </Routes>
         </Router>
       </ReduxProvider>

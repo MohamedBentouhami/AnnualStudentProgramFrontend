@@ -1,4 +1,4 @@
-.student-container {
+.course-detail-container {
     margin: 2rem auto;
     padding: 0 1rem;
     gap: 2em;
@@ -7,7 +7,7 @@
     flex-direction: column;
 }
 
-.student-title {
+.course-detail-title {
     color: var(--second-color);
     text-align: center;
     font-size: 2.2rem;

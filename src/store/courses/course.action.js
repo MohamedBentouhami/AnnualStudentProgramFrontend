@@ -11,3 +11,9 @@ export const createCourse = createAction('course/add', (newCourse) => {
         payload: newCourse
     }
 })
+
+export const getCourseTitle = createAction('course/getTitle', (courseId) => {
+    return {
+        payload: courseId
+    }
+})

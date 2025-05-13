@@ -1,5 +1,5 @@
 import { createReducer } from "@reduxjs/toolkit"
-import { createCourse, coursesFetch } from "./course.action.js";
+import { createCourse, coursesFetch, getCourseTitle } from "./course.action.js";
 
 const initialState = {
     isLoading: false,
@@ -25,6 +25,10 @@ const CourseReducer = createReducer(initialState, (builder) => {
         })
         .addCase(createCourse, (state, action) => {
             state.courses.push(action.payload);
+        })
+        .addCase(getCourseTitle, (state, action)=>{
+            const id = action.payload;
+            return state.courses.map((course)=> course.id === id) 
         })
 
 })
