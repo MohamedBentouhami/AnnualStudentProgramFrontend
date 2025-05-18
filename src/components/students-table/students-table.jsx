@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom"
 import "./student-table.css"
 
 export default function StudentsTable({ students }) {
@@ -14,7 +15,7 @@ export default function StudentsTable({ students }) {
             {students.map((student) => {
                 return <tr key={student.id}>
                     <td>{student.id}</td>
-                    <td>{student.name}</td>
+                    <td><NavLink id="student-detail" to={`${student.id}`}>{student.name}</NavLink></td>
                     <td>{student.gender.charAt(0)}</td>
                     <td>{student.section}</td>
                 </tr>

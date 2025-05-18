@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom"
+import { NavLink, useParams } from "react-router-dom"
 import useSWR from "swr";
 import { getStudentsByCourse } from "../../services/course.service.js";
 import { useSelector } from "react-redux";
@@ -18,5 +18,6 @@ export default function CourseDetailPage() {
             {title}
         </h1>
         <StudentsTable students={data}></StudentsTable>
+        <NavLink to="/courses" className="back-btn">Back</NavLink>
     </div>
 }

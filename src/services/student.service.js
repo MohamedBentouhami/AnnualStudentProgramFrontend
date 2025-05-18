@@ -17,3 +17,8 @@ export async function addStudent(name, gender, section) {
     })
     return response.data;
 }
+
+export default async function getCoursesByStudents(studentId) {
+    const response = await studentService.get(`${studentId}/courses`);
+    return response.data;
+}
