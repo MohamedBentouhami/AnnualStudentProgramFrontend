@@ -4,7 +4,7 @@ import useSWR from "swr";
 import { selectStudentName } from "../../store/students/student.selector.js";
 import { CoursesTable } from "../../components/courses-table/courses-table.jsx";
 import Loader from "../../components/loader/loader.jsx";
-import getCoursesByStudents from "../../services/student.service.js";
+import {getCoursesByStudents} from "../../services/student.service.js";
 import "./student-detail-page.css"
 
 export function StudentDetailPage() {

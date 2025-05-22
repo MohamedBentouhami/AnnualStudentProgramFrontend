@@ -20,10 +20,10 @@ export default function HomePage() {
             designed
             to equip you with the skills, knowledge, and experiences needed to shape your future. 🚀</p>
         <div>
-            <button className="btn" onClick={navToStudentsList}>
+            <button className="btn" onClick={navToCoursesList}>
                 Courses List
             </button>
-            <button className="btn" onClick={navToCoursesList}>
+            <button className="btn" onClick={navToStudentsList}>
                 Students List
             </button>
         </div>

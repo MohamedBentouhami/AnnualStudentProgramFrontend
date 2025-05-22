@@ -22,3 +22,11 @@ export async function getStudentsByCourse(courseId) {
     const response = await courseService.get(`/${courseId}/students`);
     return response.data;
 }
+
+export async function addStudentToCourse(studentId, courseId) {
+    const response = await courseService.patch("/add-student", {
+        studentId, courseId
+    })
+    console.log(response.data);
+
+}
