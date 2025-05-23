@@ -19,9 +19,9 @@ export default function DisplayStudents() {
     if (isLoading) return <Loader />
     if (Array.isArray(students) && students.length === 0) return <p className="msg">No students available.</p>
 
-    return  <div className="student-container">
+    return <div className="student-container">
         <h1 className="student-title">List of students</h1>
         <StudentsTable students={students} ></StudentsTable>
-        </div>
-    
+    </div>
+
 }

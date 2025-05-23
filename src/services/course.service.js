@@ -23,10 +23,14 @@ export async function getStudentsByCourse(courseId) {
     return response.data;
 }
 
-export async function addStudentToCourse(studentId, courseId) {
+export async function enrollStudent(studentId, courseId) {
     const response = await courseService.patch("/add-student", {
         studentId, courseId
     })
-    console.log(response.data);
+    return response.data
+}
 
+export async function getNotEnrolledCourses(studentId) {
+    const response = courseService.get(`/not-enrolled/${studentId}`)
+    return (await response).data
 }

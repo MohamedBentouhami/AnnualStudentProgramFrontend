@@ -1,4 +1,4 @@
-#select-students {
+#select-courses {
     width: 100%;
     padding: 12px 16px;
     font-size: 16px;
@@ -15,27 +15,20 @@
     margin-bottom: 1em;
 }
 
-#btn-add-student {
+.container-action-sub{
+    display: flex;
+}
+#btn-enroll-course{
     border-radius: 6px;
     padding: 1em;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     background-color: var(--third-color);
     color: white;
     border: 1px solid var(--second-color);
-
-    &:hover {
+    &:hover{
         background-color: white;
         color: var(--main-color);
         transform: translateY(-3px);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0, 0.2);
+        box-shadow: 0 4px 8px rgba(0,0,0,0,0.2);
     }
-}
-
-.container-action-sub {
-    display: flex;
-}
-
-.sub-title-modal {
-    color: var(--third-color);
 }
